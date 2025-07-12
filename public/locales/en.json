@@ -34,7 +34,10 @@
     "missingInfo": "Missing worksheet information",
     "dataNotAvailable": "Worksheet data not available",
     "returnToWorksheet": "Return to Worksheet",
-    "imageGenerationError": "Failed to generate page image for AI analysis."
+    "imageGenerationError": "Failed to generate page image for AI analysis.",
+    "clearChat": "Clear Chat",
+    "chatCleared": "Chat Cleared",
+    "chatClearedDesc": "Chat history has been cleared successfully."
   },
   "notFound": {
     "title": "404",

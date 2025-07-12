@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ChevronLeft, Send, Loader2, User, Bot } from "lucide-react";
+import { ChevronLeft, Send, Loader2, User, Bot, Trash2 } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 import { getTextDirection } from "@/lib/textDirection";
 import SwitchModeButton from "@/components/SwitchModeButton";
@@ -300,6 +300,33 @@ Analyze the student's question carefully. If they're asking for a specific works
     }
   };
 
+  const handleClearChat = () => {
+    if (!worksheetId || !pageNumber) return;
+    
+    const chatHistoryKey = `aiChatHistory_${worksheetId}_${pageNumber}`;
+    
+    try {
+      localStorage.removeItem(chatHistoryKey);
+      
+      // Reset messages to only include the welcome message
+      setMessages([{
+        role: 'assistant',
+        content: t('aiChat.welcome')
+      }]);
+      
+      toast({
+        title: t('aiChat.chatCleared'),
+        description: t('aiChat.chatClearedDesc'),
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to clear chat history",
+        variant: "destructive"
+      });
+    }
+  };
+
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -374,6 +401,15 @@ Analyze the student's question carefully. If they're asking for a specific works
         <div className="flex-1 text-center">
           <h1 className="text-xl font-semibold" dir={t('common.language') === 'العربية' ? 'rtl' : 'ltr'}>{t('aiChat.title')}</h1>
         </div>
+        <Button
+          onClick={handleClearChat}
+          variant="ghost"
+          size="icon"
+          className="text-gray-500 hover:text-red-500 hover:bg-red-50"
+          aria-label={t('aiChat.clearChat')}
+        >
+          <Trash2 className="h-5 w-5" />
+        </Button>
       </div>
 
       {/* Main Chat Container */}

@@ -34,7 +34,10 @@
     "missingInfo": "معلومات ورقة العمل مفقودة",
     "dataNotAvailable": "بيانات ورقة العمل غير متاحة",
     "returnToWorksheet": "العودة إلى ورقة العمل",
-    "imageGenerationError": "فشل في إنشاء صورة الصفحة لتحليل الذكاء الاصطناعي."
+    "imageGenerationError": "فشل في إنشاء صورة الصفحة لتحليل الذكاء الاصطناعي.",
+    "clearChat": "مسح المحادثة",
+    "chatCleared": "تم مسح المحادثة",
+    "chatClearedDesc": "تم مسح تاريخ المحادثة بنجاح."
   },
   "notFound": {
     "title": "404",
