@@ -397,7 +397,7 @@ Analyze the student's question carefully. If they're asking for a specific works
       </Button>
 
       {/* Header */}
-      <div className="absolute top-0 left-0 right-16 bg-white border-b border-gray-200 p-4 flex items-center gap-4 z-90">
+      <div className="bg-white border-b border-gray-200 p-4 flex items-center gap-4 relative z-90">
         <div className="flex-1 text-center">
           <h1 className="text-xl font-semibold" dir={t('common.language') === 'العربية' ? 'rtl' : 'ltr'}>{t('aiChat.title')}</h1>
         </div>
@@ -413,7 +413,7 @@ Analyze the student's question carefully. If they're asking for a specific works
       </div>
 
       {/* Main Chat Container */}
-      <div className="flex-1 flex flex-col pb-20 w-full pt-20">
+      <div className="flex-1 flex flex-col pb-20 w-full">
         {/* Messages Container */}
         <div className="flex-1 overflow-hidden">
           <ScrollArea className="h-full">
