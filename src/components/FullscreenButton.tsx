@@ -62,7 +62,7 @@ const FullscreenButton: React.FC = () => {
   return (
     <Button
       onClick={handleClick}
-      className="fixed bottom-4 right-4 z-50 rounded-full bg-transparent hover:bg-transparent"
+      className="absolute bottom-4 right-4 z-50 rounded-full bg-transparent hover:bg-transparent"
       size="icon"
       variant="ghost"
       aria-label="Toggle Fullscreen"

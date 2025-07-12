@@ -57,7 +57,7 @@ const QrScannerPage: React.FC = () => {
   return (
     <div className="h-full bg-gray-50 flex flex-col items-center justify-center p-4">
       {/* Language Selection Button */}
-      <div className="fixed top-4 left-4 z-50">
+      <div className="absolute top-4 left-4 z-50">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon" className="bg-white shadow-md">

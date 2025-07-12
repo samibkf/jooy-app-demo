@@ -13,7 +13,7 @@ const QRScannerButton: React.FC = () => {
   return (
     <Button
       onClick={handleClick}
-      className="fixed top-4 right-4 z-80 rounded-full bg-gradient-orange-magenta hover:bg-gradient-orange-magenta text-white shadow-lg"
+      className="absolute top-4 right-4 z-80 rounded-full bg-gradient-orange-magenta hover:bg-gradient-orange-magenta text-white shadow-lg"
       size="icon"
       aria-label="Scan QR Code"
     >

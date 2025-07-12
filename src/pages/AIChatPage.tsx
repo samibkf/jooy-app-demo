@@ -360,24 +360,24 @@ Analyze the student's question carefully. If they're asking for a specific works
 
   return (
     <div className="h-full bg-gray-50 flex flex-col">
-      {/* Fixed Back Button */}
+      {/* Back Button */}
       <Button
         onClick={goBack}
-        className="fixed top-4 left-4 z-70 rounded-full bg-gradient-orange-magenta hover:bg-gradient-orange-magenta text-white shadow-lg"
+        className="absolute top-4 left-4 z-70 rounded-full bg-gradient-orange-magenta hover:bg-gradient-orange-magenta text-white shadow-lg"
         size="icon"
       >
         <ChevronLeft className="h-5 w-5" />
       </Button>
 
-      {/* Fixed Header */}
-      <div className="fixed top-0 left-0 right-0 z-60 bg-white border-b border-gray-200 p-4 flex items-center gap-4">
+      {/* Header */}
+      <div className="bg-white border-b border-gray-200 p-4 flex items-center gap-4 relative z-60">
         <div className="flex-1 text-center">
           <h1 className="text-xl font-semibold" dir={t('common.language') === 'العربية' ? 'rtl' : 'ltr'}>{t('aiChat.title')}</h1>
         </div>
       </div>
 
       {/* Main Chat Container */}
-      <div className="flex-1 flex flex-col pt-20 pb-20 max-w-4xl mx-auto w-full">
+      <div className="flex-1 flex flex-col pb-20 max-w-4xl mx-auto w-full">
         {/* Messages Container */}
         <div className="flex-1 overflow-hidden">
           <ScrollArea className="h-full">

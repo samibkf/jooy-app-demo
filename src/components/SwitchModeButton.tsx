@@ -35,7 +35,7 @@ const SwitchModeButton: React.FC<SwitchModeButtonProps> = ({
   return (
     <Button
       onClick={handleClick}
-      className="fixed bottom-20 left-4 z-70 rounded-full bg-gradient-orange-magenta hover:bg-gradient-orange-magenta text-white shadow-lg"
+      className="absolute bottom-20 left-4 z-70 rounded-full bg-gradient-orange-magenta hover:bg-gradient-orange-magenta text-white shadow-lg"
       size="icon"
       aria-label="Switch to Worksheet View"
     >
