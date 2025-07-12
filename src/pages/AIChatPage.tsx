@@ -359,7 +359,7 @@ Analyze the student's question carefully. If they're asking for a specific works
   }
 
   return (
-    <div className="h-full bg-gray-50 flex flex-col">
+    <div className="h-full bg-gray-50 flex flex-col relative">
       {/* Back Button */}
       <Button
         onClick={goBack}
@@ -456,7 +456,7 @@ Analyze the student's question carefully. If they're asking for a specific works
       </div>
 
       {/* Fixed Input Area */}
-      <div className="fixed bottom-0 left-0 right-0 z-60 bg-white border-t border-gray-200 p-4">
+      <div className="absolute bottom-0 inset-x-0 z-60 bg-white border-t border-gray-200 p-4">
         <div className="w-full">
           <div className="flex gap-3">
             <Input
