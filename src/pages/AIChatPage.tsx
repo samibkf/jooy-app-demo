@@ -377,7 +377,7 @@ Analyze the student's question carefully. If they're asking for a specific works
       </div>
 
       {/* Main Chat Container */}
-      <div className="flex-1 flex flex-col pb-20 max-w-4xl mx-auto w-full">
+      <div className="flex-1 flex flex-col pb-20 w-full">
         {/* Messages Container */}
         <div className="flex-1 overflow-hidden">
           <ScrollArea className="h-full">
@@ -457,7 +457,7 @@ Analyze the student's question carefully. If they're asking for a specific works
 
       {/* Fixed Input Area */}
       <div className="fixed bottom-0 left-0 right-0 z-60 bg-white border-t border-gray-200 p-4">
-        <div className="max-w-3xl mx-auto">
+        <div className="w-full">
           <div className="flex gap-3">
             <Input
               value={inputMessage}
