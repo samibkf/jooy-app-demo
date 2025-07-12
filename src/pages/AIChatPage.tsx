@@ -405,7 +405,7 @@ Analyze the student's question carefully. If they're asking for a specific works
           onClick={handleClearChat}
           variant="ghost"
           size="icon"
-          className="text-gray-500 hover:text-red-500 hover:bg-red-50"
+          className="text-gray-500 hover:text-red-500 hover:bg-red-50 mr-2"
           aria-label={t('aiChat.clearChat')}
         >
           <Trash2 className="h-5 w-5" />
