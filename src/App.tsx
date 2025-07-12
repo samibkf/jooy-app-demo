@@ -20,19 +20,21 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<QrScannerPage />} />
-          <Route path="/worksheet/:id/:n" element={<WorksheetPage />} />
-          <Route path="/chat/:worksheetId/:pageNumber" element={<AIChatPage />} />
-          <Route path="/home" element={<Index />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <FullscreenButton />
-        <Routes>
-          <Route path="/" element={null} />
-          <Route path="*" element={<QRScannerButton />} />
-        </Routes>
-        <PWAInstallPrompt />
+        <div className="h-full flex flex-col">
+          <Routes>
+            <Route path="/" element={<QrScannerPage />} />
+            <Route path="/worksheet/:id/:n" element={<WorksheetPage />} />
+            <Route path="/chat/:worksheetId/:pageNumber" element={<AIChatPage />} />
+            <Route path="/home" element={<Index />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <FullscreenButton />
+          <Routes>
+            <Route path="/" element={null} />
+            <Route path="*" element={<QRScannerButton />} />
+          </Routes>
+          <PWAInstallPrompt />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

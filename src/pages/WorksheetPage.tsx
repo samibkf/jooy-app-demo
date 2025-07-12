@@ -293,7 +293,7 @@ const WorksheetPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="h-full flex flex-col bg-gray-50">
       <WorksheetViewer 
         worksheetId={id} 
         pageIndex={pageIndex} 

@@ -560,7 +560,7 @@ const WorksheetViewer: React.FC<WorksheetViewerProps> = ({
 
   return (
     <div 
-      className={`worksheet-container ${isTextMode ? 'text-mode' : ''}`} 
+      className={`worksheet-container flex-1 ${isTextMode ? 'text-mode' : ''}`} 
       ref={pdfContainerRef}
     >
       <audio ref={audioRef} className="hidden" />
